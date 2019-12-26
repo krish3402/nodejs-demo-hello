@@ -2,6 +2,8 @@ version: '3'
 
 services:
      nodejs:
-         image: krish6654/nodejs:3.0
+         build:
+           context: .
+           Dockerfile: Dockerfile
          ports:
-             - 80
+             - 80:80
