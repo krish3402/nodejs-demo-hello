@@ -4,6 +4,6 @@ services:
      nodejs:
          build:
            context: .
-           Dockerfile: Dockerfile-nodejs
+           Dockerfile: Dockerfile
          ports:
              - "80:80"
