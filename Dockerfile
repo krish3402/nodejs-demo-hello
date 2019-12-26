@@ -1,4 +1,4 @@
-FROM krish6654/nodejs:3.0
+FROM krish6654/nodejs
 WORKDIR /var/www/html
 ADD . /var/www/html
 RUN npm install
