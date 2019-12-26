@@ -3,4 +3,4 @@ WORKDIR /var/www/html/
 ADD . /var/www/html/
 RUN npm install
 EXPOSE 3000
-CMD npm start
+CMD ["PORT=80", "npm", "start" ]
