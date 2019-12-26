@@ -1,9 +1,11 @@
 version: '3'
 
 services:
-     nodejs:
-         build:
+     nginx:
+        build:
            context: .
-           Dockerfile: Dockerfile-nodejs
-         ports:
-             - "80:80"
+           dockerfile: Dockerfile
+        ports:
+          - "80:80"
+        command: npm start
+
